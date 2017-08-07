@@ -16,7 +16,8 @@ const {
   ProviderBXinTH,
   ProviderPaymium,
   ProviderBtcChina,
-  ProviderBitso
+  ProviderBitso,
+  ProviderKraken
 } = Local.imports;
 
 
@@ -34,7 +35,8 @@ const ApiProvider = new Lang.Class({
       bxinth: new ProviderBXinTH.Api(),
       paymium: new ProviderPaymium.Api(),
       btcchina: new ProviderBtcChina.Api(),
-      bitso: new ProviderBitso.Api()
+      bitso: new ProviderBitso.Api(),
+      kraken: new ProviderKraken.Api()
     };
   },
 

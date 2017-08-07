@@ -23,7 +23,7 @@ const Api = new Lang.Class({
     last: function (options) {
       const renderCurrency = BaseProvider.CurrencyRenderer(options);
       const renderChange = BaseProvider.ChangeRenderer();
-
+      log('Bitstamp last');
       return {
         text: (data) => renderCurrency(data.last),
         change: (data) => renderChange(data.last)
